@@ -13,6 +13,7 @@
 		BAECA8DB26C8BC9700F48B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAECA8D926C8BC9700F48B29 /* Main.storyboard */; };
 		BAECA8DD26C8BC9800F48B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAECA8DC26C8BC9800F48B29 /* Assets.xcassets */; };
 		BAECA8E026C8BC9800F48B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAECA8DE26C8BC9800F48B29 /* LaunchScreen.storyboard */; };
+		BAECA8EA26C8BD7600F48B29 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BAECA8E926C8BD7600F48B29 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		BAECA8DC26C8BC9800F48B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAECA8DF26C8BC9800F48B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAECA8E126C8BC9800F48B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAECA8E726C8BD7600F48B29 /* A815HelloNetwork-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A815HelloNetwork-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAECA8E826C8BD7600F48B29 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BAECA8E926C8BD7600F48B29 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,13 @@
 				BAECA8D326C8BC9700F48B29 /* AppDelegate.swift */,
 				BAECA8D526C8BC9700F48B29 /* SceneDelegate.swift */,
 				BAECA8D726C8BC9700F48B29 /* ViewController.swift */,
+				BAECA8E826C8BD7600F48B29 /* Reachability.h */,
+				BAECA8E926C8BD7600F48B29 /* Reachability.m */,
 				BAECA8D926C8BC9700F48B29 /* Main.storyboard */,
 				BAECA8DC26C8BC9800F48B29 /* Assets.xcassets */,
 				BAECA8DE26C8BC9800F48B29 /* LaunchScreen.storyboard */,
 				BAECA8E126C8BC9800F48B29 /* Info.plist */,
+				BAECA8E726C8BD7600F48B29 /* A815HelloNetwork-Bridging-Header.h */,
 			);
 			path = A815HelloNetwork;
 			sourceTree = "<group>";
@@ -98,6 +105,7 @@
 				TargetAttributes = {
 					BAECA8CF26C8BC9700F48B29 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -139,6 +147,7 @@
 			files = (
 				BAECA8D826C8BC9700F48B29 /* ViewController.swift in Sources */,
 				BAECA8D426C8BC9700F48B29 /* AppDelegate.swift in Sources */,
+				BAECA8EA26C8BD7600F48B29 /* Reachability.m in Sources */,
 				BAECA8D626C8BC9700F48B29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = A815HelloNetwork/Info.plist;
@@ -295,6 +305,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.sjw.A815HelloNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "A815HelloNetwork/A815HelloNetwork-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XSVW22JPST;
 				INFOPLIST_FILE = A815HelloNetwork/Info.plist;
@@ -314,6 +327,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = idv.sjw.A815HelloNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "A815HelloNetwork/A815HelloNetwork-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

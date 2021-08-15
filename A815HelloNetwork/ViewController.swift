@@ -11,9 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(getNetworkStatus())
     }
 
+    
+    func getNetworkStatus()->Bool{
+        if Reachability(hostName: "www.apple.com")?.currentReachabilityStatus().rawValue == 0 {
+            return false
+        }else{
+            return true
+        }
+    }
 
 }
 
